@@ -1,8 +1,7 @@
-// Bộ nhớ RAM lưu trữ HWID -> Key trên Serverless Vercel
 global.HWID_STORE = global.HWID_STORE || {};
 
 export function saveKey(hwid, newKey) {
-    const expireAt = Date.now() + 24 * 60 * 60 * 1000; // Hạn 24h
+    const expireAt = Date.now() + 24 * 60 * 60 * 1000;
     global.HWID_STORE[hwid] = {
         key: newKey,
         expireAt: expireAt
