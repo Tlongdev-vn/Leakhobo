@@ -41,15 +41,14 @@
     <div class="card" id="mainCard">
         <button class="lang-switch" id="langBtn" onclick="toggleLanguage()">🌐 EN</button>
 
-        <!-- Trạng thái 1: Chưa Get Key -->
         <div id="stateUnkey">
             <div class="icon-wrapper icon-get"><i class="fa-solid fa-key"></i></div>
             <div class="sub-title">OFFICIAL KEY SYSTEM</div>
             <div class="main-title">TLONG SYSTEM</div>
-            <div class="desc" id="txtDescUnkey">Click the button to get key today's key.</div>
+            <div class="desc" id="txtDescUnkey">Click the button below to bypass Link4m and get today's key.</div>
 
             <button class="btn-action btn-get" id="btnBypass" onclick="handleBypass(event)">
-                <i class="fa-solid fa-bolt"></i> <span id="txtBtnGet">GET KEY</span>
+                <i class="fa-solid fa-bolt"></i> <span id="txtBtnGet">BYPASS LINK4M TO GET KEY</span>
             </button>
 
             <div class="social-row">
@@ -75,16 +74,15 @@
             </div>
         </div>
 
-        <!-- Trạng thái 2: Đã Get Key Thành Công -->
         <div id="stateKeyed" style="display: none;">
             <div class="icon-wrapper icon-success"><i class="fa-solid fa-check"></i></div>
-            <div class="main-title" id="txtSuccessTitle" style="font-size: 22px;">GET KEY SUCCESSFUL!</div>
+            <div class="main-title" id="txtSuccessTitle" style="font-size: 22px;">BYPASS SUCCESSFUL!</div>
             <div class="desc" id="txtDescKeyed">Here is your key for today:</div>
 
             <div class="key-box" id="keyDisplay">TLONG-XXXX-XXXX</div>
 
             <button class="btn-action btn-copy" onclick="copyKey()">
-                <i class="fa-solid fa-copy"></i> <span id="txtBtnCopy">COPY KEY </span>
+                <i class="fa-solid fa-copy"></i> <span id="txtBtnCopy">COPY KEY TO ROBLOX</span>
             </button>
         </div>
     </div>
@@ -102,23 +100,23 @@
                 note1: "Keys automatically expire after 24 hours.",
                 note2: "Each key is locked to 1 single device.",
                 note3: "Safe bypass time takes about 1 - 2 minutes.",
-                successTitle: "BYPASS SUCCESSFUL!",
+                successTitle: "Get Key succssefull!",
                 descKeyed: "Here is your key for today:",
-                btnCopy: "COPY KEY TO ROBLOX",
+                btnCopy: "COPY KEY",
                 copied: "✔ COPIED TO CLIPBOARD!"
             },
             VI: {
                 langBtn: "🌐 VI",
                 descUnkey: "Bấm vào nút bên dưới để vượt Link4m lấy Key hôm nay.",
-                btnGet: " LẤY KEY",
+                btnGet: "LẤY KEY",
                 noteTitle: "LƯU Ý KHI GET KEY:",
                 note1: "Key tự động hết hạn sau 24 giờ.",
                 note2: "Key chỉ gắn cố định trên 1 thiết bị.",
                 note3: "Thời gian vượt link an toàn từ 1 - 2 phút.",
                 successTitle: "VƯỢT LINK THÀNH CÔNG!",
                 descKeyed: "Dưới đây là Mã Key của bạn hôm nay:",
-                btnCopy: "COPY KEY VÀO ROBLOX",
-                copied: "✔ ĐÃ SAO CHÉP VÀO KHAY NHỚ!"
+                btnCopy: "COPY KEY",
+                copied: "✔ ĐÃ SAO CHÉP"
             }
         };
 
